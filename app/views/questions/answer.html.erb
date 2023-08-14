@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>First Rails App</title>
+  <title>Coach's Answer</title>
 </head>
 <body>
-  <h1>Answer</h1>
-  <form action="/answer" method="post">
-    <label for="answer">Your coach answered:</label>
-    <input type="text" name="answer" placeholder="answer">
-    <br>
-    <input type="submit">
-  </form>
+  <h1>Coach's Answer</h1>
+
+  <p><strong>Question:</strong> <%= params[:question] %></p>
+  <p><strong>Answer:</strong> <%= @answer %></p>
 </body>
 </html>
